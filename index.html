@@ -10,7 +10,73 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>RegisterForm</title>
 </head>
+<style>
+    .project-title {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        padding: 100px;
+        font-size: 34px;
+        color: black;
+    }
+
+    .container {
+        max-width: 765px;
+        margin: auto;
+        padding: 20px;
+        background-color: #2b4242;
+        font-size: 20px;
+        border-radius: 3px;
+        border: 1px solid #4444;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+        min-height: 300px;
+    }
+
+    .inputs {
+        position: relative;
+        float: left;
+        width: 100%;
+        padding: 10px 0 10px 10px;
+    }
+
+    .inputs input {
+        width: 100%;
+        /*padding: 20px 0 4px 0;*/
+        border-color: #aaaa;
+        border-width: 0 0 2px 0;
+        color: white;
+        outline: 0;
+        padding: 0 15px;
+        transition: all ease .5s;
+    }
+
+    .inputs input:focus {
+        border-bottom: 2px solid #FFFFFF;
+    }
+
+    .half {
+        width: 50%;
+        float: left !important;
+    }
+</style>
 <body>
-<p class="project-title">Form number one</p>
+<p class="project-title">Form project number one</p>
+<div class="container container-custom">
+    <div class="inputs">Register Form</div>
+    <form action="" method="post">
+        <div class="inputs half">
+            <input type="text" id="label1" name="username" placeholder=""><label for="label1">username</label>
+        </div>
+        <div class="inputs half">
+            <input type="password" id="label2" name="password" placeholder=""><label for="label2">password</label>
+        </div>
+        <div class="inputs full">
+            <input type="text" id="label3" name="full name" placeholder=""><label for="label3">full name</label>
+        </div>
+        <div class="inputs">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
